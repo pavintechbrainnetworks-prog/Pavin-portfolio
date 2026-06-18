@@ -46,7 +46,7 @@ const stats = [
 ]
 
 /* ─── Tech Badges (shared) ───────────────────────────── */
-const commonBadges = ['React', 'Tailwind CSS', 'Vite', 'SEO', 'Responsive Design']
+const commonBadges = ['React', 'CSS', 'Vite', 'SEO', 'Responsive Design']
 
 /* ─── Project Data ───────────────────────────────────── */
 const projects = [
