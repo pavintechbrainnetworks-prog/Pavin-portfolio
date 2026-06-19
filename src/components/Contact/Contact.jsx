@@ -25,7 +25,7 @@ const socials = [
   { icon: FiMail, label: 'Email', href: 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRnXmmjgpffCrNJxmrpkjBJlVpmWmKPSXsbqdxqjZCctVnNmKkdgRJwpMlmZFcRqBjrzhVb', id: 'contact-email' },
 ]
 
-const initialForm = { Name: '', Email: '', Subject: '', Message: '' }
+const initialForm = { name: '', email: '', subject: '', message: '' }
 
 export default function Contact() {
   const ref = useRef(null)
@@ -40,7 +40,7 @@ export default function Contact() {
     e.preventDefault()
     
     // Client-side validation check
-    if (!form.Name.trim() || !form.Email.trim() || !form.Subject.trim() || !form.Message.trim()) {
+    if (!form.name.trim() || !form.email.trim() || !form.subject.trim() || !form.message.trim()) {
       setStatus('error')
       setTimeout(() => setStatus('idle'), 4000)
       return
@@ -55,10 +55,10 @@ export default function Contact() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          name: form.Name,
-          email: form.Email,  
-          subject: form.Subject,
-          message: form.Message,
+          Name: form.name,
+          Email: form.email,
+          Subject: form.subject,
+          Message: form.message,
           _captcha: "false"
         })
       })
@@ -172,7 +172,7 @@ export default function Contact() {
                       type="text"
                       name="name"
                       placeholder="Enter Your Name"
-                      value={form.Name}
+                      value={form.name}
                       onChange={handleChange}
                       required
                     />
@@ -184,7 +184,7 @@ export default function Contact() {
                       type="email"
                       name="email"
                       placeholder="Enter Your Email"
-                      value={form.Email}
+                      value={form.email}
                       onChange={handleChange}
                       required
                     />
@@ -198,7 +198,7 @@ export default function Contact() {
                     type="text"
                     name="subject"
                     placeholder="Project Collaboration"
-                    value={form.Subject}
+                    value={form.subject}
                     onChange={handleChange}
                     required
                   />
@@ -211,7 +211,7 @@ export default function Contact() {
                     name="message"
                     rows={5}
                     placeholder="Tell me about your project..."
-                    value={form.Message}
+                    value={form.message}
                     onChange={handleChange}
                     required
                   />
