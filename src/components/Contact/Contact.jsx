@@ -172,7 +172,7 @@ export default function Contact() {
                       type="text"
                       name="name"
                       placeholder="Enter Your Name"
-                      value={form.name}
+                      value={form.Name}
                       onChange={handleChange}
                       required
                     />
@@ -184,7 +184,7 @@ export default function Contact() {
                       type="email"
                       name="email"
                       placeholder="Enter Your Email"
-                      value={form.email}
+                      value={form.Email}
                       onChange={handleChange}
                       required
                     />
@@ -198,7 +198,7 @@ export default function Contact() {
                     type="text"
                     name="subject"
                     placeholder="Project Collaboration"
-                    value={form.subject}
+                    value={form.Subject}
                     onChange={handleChange}
                     required
                   />
@@ -211,7 +211,7 @@ export default function Contact() {
                     name="message"
                     rows={5}
                     placeholder="Tell me about your project..."
-                    value={form.message}
+                    value={form.Message}
                     onChange={handleChange}
                     required
                   />
