@@ -60,6 +60,8 @@ const projects = [
     description:
       'A real-time workforce analytics platform featuring live activity tracking, productivity dashboards, attendance management, role-based access control, and detailed performance reports — built for modern distributed teams.',
     tech: commonBadges,
+    
+
 
   },
   {

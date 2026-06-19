@@ -43,7 +43,7 @@ const skillCategories = [
     color: 'purple',
     skills: [
       { name: 'MongoDB',    level: 85 },
-      { name: 'Mongoose',   level: 83 },
+      { name: 'Mongoose (ODM)',   level: 83 },
     ]
   },
   // {
@@ -76,6 +76,8 @@ const skillCategories = [
       { name: 'UI/UX Design', level: 95 },
       { name: 'Responsive Design', level: 90 },
       { name: 'SEO Best Practices', level: 90 },
+      { name: 'Technical Support', level: 90 },
+      { name: 'Troubleshooting', level: 90 },
     ]
   },
 ]
