@@ -19,7 +19,7 @@ const experiences = [
     company: 'TechBrain Networks Pvt Ltd',
     type: 'Full-time',
     period: 'June 2025 – Present',
-    location: 'India (Remote)',
+    location: 'Thanjavur, India',
     current: true,
     description:
       'Building enterprise-grade web applications and AI-powered platforms for automotive, edtech, and fintech verticals. Architecting scalable MERN solutions serving thousands of users.',
@@ -37,7 +37,7 @@ const experiences = [
     company: 'Self-Directed Learning & Projects',
     type: 'Self-Learning',
     period: 'Jan 2024 – May 2025',
-    location: 'India',
+    location: 'Thanjavur, India',
     current: false,
     description:
       'Intensive self-directed learning phase — built multiple full-stack projects to master the MERN stack, React ecosystem, and modern CSS techniques.',

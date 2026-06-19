@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiMail, FiMapPin, FiPhone, FiSend, FiGithub, FiLinkedin, FiTwitter, FiCheckCircle } from 'react-icons/fi'
-import emailjs from '@emailjs/browser'
 import './Contact.css'
 
 const fadeUp = {
@@ -15,7 +14,7 @@ const stagger = {
 }
 
 const contactInfo = [
-  { icon: FiMail, label: 'Email', value: 'pavintechbrainNetworks@gmail.com', href: 'mailto:pavin@example.com' },
+  { icon: FiMail, label: 'Email', value: 'pavintechbrainnetworks@gmail.com', href: 'mailto:pavintechbrainnetworks@gmail.com' },
   { icon: FiMapPin, label: 'Location', value: 'Thanjavur, Tamil Nadu, India', href: null },
   { icon: FiPhone, label: 'Phone', value: '+91 9047141532', href: 'tel:+919047141532' },
 ]
@@ -39,18 +38,39 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    // Client-side validation check
+    if (!form.name.trim() || !form.email.trim() || !form.subject.trim() || !form.message.trim()) {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 4000)
+      return
+    }
+
     setStatus('sending')
     try {
-      // Replace with your actual EmailJS credentials
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        formRef.current,
-        'YOUR_PUBLIC_KEY'
-      )
-      setStatus('success')
-      setForm(initialForm)
-    } catch {
+      const response = await fetch("https://formsubmit.co/ajax/pavintechbrainnetworks@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+          _captcha: "false"
+        })
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setForm(initialForm)
+      } else {
+        setStatus('error')
+      }
+    } catch (err) {
+      console.error("Form submission error:", err)
       setStatus('error')
     }
     setTimeout(() => setStatus('idle'), 4000)

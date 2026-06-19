@@ -17,34 +17,34 @@ const achievements = [
   {
     icon: FiAward,
     color: 'gold',
-    title: 'Enterprise Platform Developer',
-    subtitle: 'TechBrain Networks – 2025',
+    title: 'Enterprise Solutions Developer',
+    subtitle: 'TechBrain Networks • 2025',
     description:
-      'Led development of an enterprise AI-powered automotive platform serving clients across multiple verticals with 20+ product pages.',
+      'Contributed to the development of enterprise web platforms across diverse industries, creating scalable, maintainable, and user-focused digital solutions.',
   },
   {
     icon: FiStar,
     color: 'blue',
-    title: 'MERN Stack Mastery',
-    subtitle: 'Self-Certified – 2024',
+    title: 'MERN Stack Professional',
+    subtitle: 'Independent Learning & Project Development • 2024',
     description:
-      'Achieved expert-level proficiency in the complete MERN stack by building 8+ production-ready full-stack applications.',
+      'Demonstrated proficiency in the MERN stack by designing and deploying 8+ full-stack applications, covering frontend development, backend services, database design, and API integration.',
   },
   {
     icon: FiZap,
     color: 'purple',
-    title: 'AI Integration Specialist',
+    title: 'Full-Stack Web Application Architect',
     subtitle: 'Personal Project – 2025',
     description:
-      'Successfully integrated Gemini AI, LangChain, and OpenAI APIs into production platforms for intelligent, context-aware features.',
+      'Built and optimized complete web solutions, transforming business requirements into high-performance applications with modern development practices.',
   },
   {
     icon: FiTrendingUp,
     color: 'cyan',
-    title: '40% Performance Optimization',
+    title: 'Performance & Optimization Focus',
     subtitle: 'TechBrain Networks – 2025',
     description:
-      'Improved React rendering performance by 40% through advanced memoization, lazy loading, and code-splitting techniques.',
+      'Improved application efficiency through component optimization, lazy loading, code splitting, and responsive design techniques, delivering smooth experiences across devices.',
   },
 ]
 

@@ -24,7 +24,6 @@ const skillCategories = [
       { name: 'React.js',    level: 90 },
       { name: 'JavaScript',  level: 90 },
       { name: 'HTML5/CSS3',  level: 92 },
-      { name: 'Framer Motion', level: 80 },
     ]
   },
   {
@@ -161,7 +160,7 @@ export default function Skills() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.7, duration: 0.6 }}
         >
-          {['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'Git', 'REST API', 'Framer Motion'].map((t) => (
+          {['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript', 'Git', 'REST API'].map((t) => (
             <span key={t} className="skills__pill">{t}</span>
           ))}
         </motion.div>

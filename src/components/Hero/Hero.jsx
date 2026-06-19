@@ -157,7 +157,7 @@ export default function Hero() {
           {/* Company */}
           <motion.div variants={itemVariants} className="hero__company">
             <div className="hero__company-dot" />
-            <span>Full Stack Developer @ <strong>TechBrain Networks Pvt Ltd</strong></span>
+            <span>Full Stack Developer @ <strong ><a href="https://techbrainnetworks.com/">TechBrain Networks Pvt Ltd</a></strong></span>
             <span className="hero__company-date">June 2025 – Present</span>
           </motion.div>
 
