@@ -151,7 +151,7 @@ export default function Hero() {
 
           {/* Headline */}
           <motion.p variants={itemVariants} className="hero__headline">
-            "Building Modern Website and Web Applications That Combine Performance, Scalability, and Exceptional User Experience."
+            "Building Modern Websites and Web Applications That Combine Performance, Scalability, and Exceptional User Experience."
           </motion.p>
 
           {/* Company */}
