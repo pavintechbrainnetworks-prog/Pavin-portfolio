@@ -25,7 +25,7 @@ const socials = [
   { icon: FiMail, label: 'Email', href: 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRnXmmjgpffCrNJxmrpkjBJlVpmWmKPSXsbqdxqjZCctVnNmKkdgRJwpMlmZFcRqBjrzhVb', id: 'contact-email' },
 ]
 
-const initialForm = { name: '', email: '', subject: '', message: '' }
+const initialForm = { Name: '', Email: '', Subject: '', Message: '' }
 
 export default function Contact() {
   const ref = useRef(null)
@@ -40,7 +40,7 @@ export default function Contact() {
     e.preventDefault()
     
     // Client-side validation check
-    if (!form.name.trim() || !form.email.trim() || !form.subject.trim() || !form.message.trim()) {
+    if (!form.Name.trim() || !form.Email.trim() || !form.Subject.trim() || !form.Message.trim()) {
       setStatus('error')
       setTimeout(() => setStatus('idle'), 4000)
       return
@@ -55,10 +55,10 @@ export default function Contact() {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          subject: form.subject,
-          message: form.message,
+          name: form.Name,
+          email: form.Email,  
+          subject: form.Subject,
+          message: form.Message,
           _captcha: "false"
         })
       })
