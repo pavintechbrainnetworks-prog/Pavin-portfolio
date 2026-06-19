@@ -118,7 +118,7 @@ a.contact__info-value:hover {
 
 /* ---- Form Side ---- */
 .contact__form-wrap {
-  padding: 40px;
+  padding: 20px;
 }
 
 .contact__form-title {
@@ -232,8 +232,17 @@ a.contact__info-value:hover {
   color: var(--text-secondary);
   font-size: 0.95rem;
 }
-
 /* Responsive */
+@media (max-width: 1024px) {
+  
+  .contact__form-row {
+    
+    grid-template-columns: 1fr;
+
+  }
+}
+
+
 @media (max-width: 900px) {
   .contact__grid {
     grid-template-columns: 1fr;
@@ -241,7 +250,7 @@ a.contact__info-value:hover {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 555px) {
   .contact__form-wrap {
     padding: 24px;
   }

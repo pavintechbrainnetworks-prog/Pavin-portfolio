@@ -572,3 +572,37 @@
     display: none;
   }
 }
+@media (max-width:480px) {
+.hero__stats-card{
+   left: 200px;
+    top: 1px;
+    gap: 11px;
+   padding:5px 12px ;
+  }
+  .hero__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.hero__stat-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero__stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.hero__stat-divider {
+  width: 2px;
+  height: 40px;
+  background: var(--glass-border);
+}
+  
+}

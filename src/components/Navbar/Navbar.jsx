@@ -66,8 +66,7 @@ export default function Navbar() {
               <FiCode size={18} />
             </div>
             <span className="navbar__logo-text">
-              <span className="gradient-text">Pavin kumar</span>
-              <span className="navbar__logo-dot"> G </span>
+              <span className="Pavin">Pavin kumar G</span>
             </span> 
           </a>
 

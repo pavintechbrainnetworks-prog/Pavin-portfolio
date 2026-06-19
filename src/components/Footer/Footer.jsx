@@ -35,7 +35,7 @@ export default function Footer() {
           <div className="footer__brand">
             <div className="footer__logo">
               <div className="footer__logo-icon"><FiCode size={16} /></div>
-              <span className="gradient-text footer__logo-text">Pavin.</span>
+              <span className="gradient-text footer__logo-text">Pavinkumar G</span>
             </div>
             <p className="footer__tagline">
               Building scalable web applications and AI-powered platforms that solve real-world problems.

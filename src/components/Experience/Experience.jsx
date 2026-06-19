@@ -30,7 +30,7 @@ const experiences = [
       'Optimized React rendering performance by 40% using memoization and code splitting',
       'Engineered RESTful APIs with JWT authentication, role-based access control',
     ],
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js','Gemini AI'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Gemini AI'],
   },
   {
     role: 'Frontend Developer (Intern)',
@@ -43,11 +43,11 @@ const experiences = [
       'Intensive self-directed learning phase — built multiple full-stack projects to master the MERN stack, React ecosystem, and modern CSS techniques.',
     highlights: [
       'Built 8+ full-stack projects',
-      'Mastered React hooks, context API, and state management patterns',
-      'Developed RESTful APIs and integrated third-party services',
-      'Achieved responsive design proficiency across all device breakpoints',
+      'Created responsive, high-performance user interfaces with a strong emphasis on user experience and accessibility.',
+      'Adopted modern development workflows, including version control, code organization, and deployment best practices.',
+      'Demonstrated the ability to independently learn, solve complex technical challenges, and deliver complete software solutions from concept to deployment.',
     ],
-    tech: ['React.js', 'Node.js', 'MongoDB', 'CSS3', 'Git','Github'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Javascript', 'CSS3', 'Git', 'Github', 'Responsive Web Design'],
   },
 ]
 
