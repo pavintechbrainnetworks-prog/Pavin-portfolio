@@ -606,3 +606,23 @@
 }
   
 }
+@media (max-width:420px) {
+.hero__stats-card{
+   left: 220px;
+   right: 30px;
+    top: 10px;
+    gap: 5px;
+   padding:5px 10px ;
+  }
+  .hero__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+}
+@media (max-width:400px) {
+.hero__stats-card{
+display: none;
+  }
+}
