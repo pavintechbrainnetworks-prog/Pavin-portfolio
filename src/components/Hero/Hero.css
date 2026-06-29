@@ -574,10 +574,10 @@
 }
 @media (max-width:480px) {
 .hero__stats-card{
-   left: 200px;
+   left: 220px;
     top: 1px;
     gap: 11px;
-   padding:5px 12px ;
+   padding:5px 30px ;
   }
   .hero__stat {
   display: flex;
