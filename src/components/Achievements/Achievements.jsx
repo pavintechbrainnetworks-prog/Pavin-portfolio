@@ -52,7 +52,7 @@ const stats = [
   { number: '8+', label: 'Projects Built', icon: '🚀' },
   { number: '1+', label: 'Year Experience', icon: '⏱️' },
   { number: '120+', label: 'Product Pages Created', icon: '📄' },
-  { number: '10+', label: 'Technologies Mastered', icon: '🛠️' },
+  { number: '10+', label: 'Technologies Used', icon: '🛠️' },
   { number: '80%', label: 'Performance Gains', icon: '⚡' },
   { number: '100%', label: 'Client Satisfaction', icon: '✅' },
 ]

@@ -1,8 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import {
-  FiCode, FiServer, FiDatabase, FiTool, FiCpu, FiLayers
-} from 'react-icons/fi'
+import { FiCode, FiServer, FiDatabase, FiTool, FiLayers, FiCheckCircle } from 'react-icons/fi'
 import './Skills.css'
 
 const fadeUp = {
@@ -12,7 +10,7 @@ const fadeUp = {
 
 const stagger = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.08 } }
+  visible: { transition: { staggerChildren: 0.09 } }
 }
 
 const skillCategories = [
@@ -20,86 +18,33 @@ const skillCategories = [
     icon: FiCode,
     label: 'Frontend',
     color: 'blue',
-    skills: [
-      { name: 'React.js',    level: 90 },
-      { name: 'JavaScript',  level: 90 },
-      { name: 'HTML5/CSS3',  level: 92 },
-    ]
+    skills: ['React.js', 'JavaScript', 'HTML5 / CSS3']
   },
   {
     icon: FiServer,
     label: 'Backend',
     color: 'cyan',
-    skills: [
-      { name: 'Node.js',    level: 85 },
-      { name: 'Express.js', level: 87 },
-      { name: 'REST APIs',  level: 90 },
-      { name: 'JWT Auth',   level: 82 },
-    ]
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth']
   },
   {
     icon: FiDatabase,
     label: 'Database',
     color: 'purple',
-    skills: [
-      { name: 'MongoDB',    level: 85 },
-      { name: 'Mongoose (ODM)',   level: 83 },
-    ]
+    skills: ['MongoDB', 'Mongoose (ODM)']
   },
-  // {
-  //   icon: FiCpu,
-  //   label: 'AI / ML',
-  //   color: 'green',
-  //   skills: [
-  //     { name: 'Python',       level: 72 },
-  //     { name: 'LangChain',    level: 65 },
-  //     { name: 'Gemini API',   level: 80 },
-  //     { name: 'OpenAI API',   level: 78 },
-  //   ]
-  // },
   {
     icon: FiTool,
     label: 'DevOps & Tools',
     color: 'orange',
-    skills: [
-      { name: 'Git / GitHub', level: 90 },
-      { name: 'Render / Vercel', level: 82 },
-      { name: 'Postman',      level: 88 },
-      { name: 'VS Code',      level: 95 },
-    ]
+    skills: ['Git / GitHub', 'Render / Vercel', 'Postman', 'VS Code']
   },
   {
     icon: FiLayers,
     label: 'Other Skills',
     color: 'pink',
-    skills: [
-      { name: 'UI/UX Design', level: 95 },
-      { name: 'Responsive Design', level: 90 },
-      { name: 'SEO Best Practices', level: 90 },
-      { name: 'Technical Support', level: 90 },
-      { name: 'Troubleshooting', level: 90 },
-    ]
+    skills: ['UI/UX Design', 'Responsive Design', 'SEO Best Practices', 'Technical Support', 'Troubleshooting']
   },
 ]
-
-function SkillBar({ name, level, inView, delay = 0 }) {
-  return (
-    <div className="skill__bar-wrap">
-      <div className="skill__bar-header">
-        <span className="skill__bar-name">{name}</span>
-        <span className="skill__bar-pct">{level}%</span>
-      </div>
-      <div className="skill__bar-track">
-        <motion.div
-          className="skill__bar-fill"
-          initial={{ width: 0 }}
-          animate={inView ? { width: `${level}%` } : { width: 0 }}
-          transition={{ duration: 1, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-        />
-      </div>
-    </div>
-  )
-}
 
 export default function Skills() {
   const ref = useRef(null)
@@ -124,6 +69,7 @@ export default function Skills() {
           </motion.p>
         </motion.div>
 
+        {/* Category Cards */}
         <div className="skills__grid">
           {skillCategories.map((cat, ci) => (
             <motion.div
@@ -134,21 +80,24 @@ export default function Skills() {
               transition={{ delay: ci * 0.1, duration: 0.6 }}
               whileHover={{ y: -6 }}
             >
+              {/* Top accent line */}
+              <div className="skills__card-accent" />
+
+              {/* Header */}
               <div className="skills__card-header">
                 <div className={`skills__icon-wrap skills__icon-wrap--${cat.color}`}>
                   <cat.icon size={18} />
                 </div>
                 <h3 className="skills__card-title">{cat.label}</h3>
               </div>
-              <div className="skills__bars">
-                {cat.skills.map((s, si) => (
-                  <SkillBar
-                    key={s.name}
-                    name={s.name}
-                    level={s.level}
-                    inView={inView}
-                    delay={ci * 0.1 + si * 0.07 + 0.3}
-                  />
+
+              {/* Skill Tags */}
+              <div className="skills__tags">
+                {cat.skills.map((skill) => (
+                  <span key={skill} className={`skills__tag skills__tag--${cat.color}`}>
+                    <FiCheckCircle size={11} />
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>
@@ -166,6 +115,7 @@ export default function Skills() {
             <span key={t} className="skills__pill">{t}</span>
           ))}
         </motion.div>
+
       </div>
     </section>
   )

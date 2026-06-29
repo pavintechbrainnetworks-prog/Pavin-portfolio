@@ -1,0 +1,179 @@
+/* ── Core Expertise Section ─────────────────────────────────── */
+.core-expertise {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--bg-section) 0%,
+    rgba(37, 99, 235, 0.03) 50%,
+    var(--bg-section) 100%
+  );
+}
+
+/* Grid */
+.ce__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+/* Card */
+.ce__card {
+  padding: 28px 24px 24px;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition: var(--transition);
+}
+
+/* Top accent border that reveals on hover */
+.ce__card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  opacity: 0;
+  transition: var(--transition);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--gradient-primary);
+}
+
+.ce__card:hover .ce__card-accent {
+  opacity: 1;
+}
+
+/* Per-colour accent overrides */
+.ce__card--cyan   .ce__card-accent { background: var(--gradient-secondary); }
+.ce__card--purple .ce__card-accent { background: var(--gradient-accent); }
+.ce__card--orange .ce__card-accent { background: linear-gradient(135deg, #F59E0B, #EF4444); }
+.ce__card--teal   .ce__card-accent { background: linear-gradient(135deg, #14B8A6, #06B6D4); }
+.ce__card--pink   .ce__card-accent { background: linear-gradient(135deg, #EC4899, #8B5CF6); }
+.ce__card--gold   .ce__card-accent { background: linear-gradient(135deg, #F59E0B, #FBBF24); }
+.ce__card--green  .ce__card-accent { background: linear-gradient(135deg, #10B981, #059669); }
+
+/* Icon wrap */
+.ce__icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.ce__card:hover .ce__icon-wrap {
+  transform: scale(1.1);
+}
+
+.ce__icon-wrap--blue   { background: rgba(37, 99, 235, 0.15);   color: #3B82F6; }
+.ce__icon-wrap--cyan   { background: rgba(6, 182, 212, 0.15);   color: #06B6D4; }
+.ce__icon-wrap--purple { background: rgba(139, 92, 246, 0.15);  color: #8B5CF6; }
+.ce__icon-wrap--orange { background: rgba(245, 158, 11, 0.15);  color: #F59E0B; }
+.ce__icon-wrap--teal   { background: rgba(20, 184, 166, 0.15);  color: #14B8A6; }
+.ce__icon-wrap--pink   { background: rgba(236, 72, 153, 0.15);  color: #EC4899; }
+.ce__icon-wrap--gold   { background: rgba(251, 191, 36, 0.15);  color: #FBBF24; }
+.ce__icon-wrap--green  { background: rgba(16, 185, 129, 0.15);  color: #10B981; }
+
+/* Card title */
+.ce__card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Card description */
+.ce__card-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* Corner badge */
+.ce__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.ce__card:hover .ce__badge {
+  opacity: 1;
+}
+
+/* Bottom CTA Strip */
+.ce__strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  gap: 20px;
+  border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.ce__strip-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ce__strip-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.ce__strip-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.ce__strip-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ce__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .ce__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ce__strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .ce__strip-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ce__strip-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

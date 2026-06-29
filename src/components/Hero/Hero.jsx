@@ -134,24 +134,26 @@ export default function Hero() {
           </motion.div>
 
           {/* Greeting */}
-          <motion.p variants={itemVariants} className="hero__greeting">
+          {/* <motion.p variants={itemVariants} className="hero__greeting">
             Hello, I'm
-          </motion.p>
+          </motion.p> */}
 
           {/* Name */}
           <motion.h1 variants={itemVariants} className="hero__name">
-            <span className="gradient-text">Pavin kumar</span>
+            <span className="gradient-text">Pavin kumar G</span>
           </motion.h1>
 
           {/* Animated Role */}
           <motion.div variants={itemVariants} className="hero__role-wrapper">
-            <span className="hero__role-prefix">I'm a </span>
-            <span className="hero__role gradient-text-2">MERN Stack Developer</span>
+            {/* <span className="hero__role-prefix">I'm a </span> */}
+            <span className="hero__role gradient-text-2">Full-Stack Software Engineer | MERN Stack Developer</span>
           </motion.div>
 
           {/* Headline */}
           <motion.p variants={itemVariants} className="hero__headline">
-            "Building Modern Websites and Web Applications That Combine Performance, Scalability, and Exceptional User Experience."
+            Designing and building scalable web applications, enterprise platforms, and AI-powered digital solutions that deliver measurable business impact.
+            <br />
+            Currently developing enterprise-grade applications at TechBrain Networks Pvt Ltd.
           </motion.p>
 
           {/* Company */}

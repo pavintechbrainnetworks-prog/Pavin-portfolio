@@ -104,14 +104,15 @@ export default function About() {
             </motion.h3>
 
             <motion.p variants={fadeUp} className="about__text">
-              I'm <strong>Pavin</strong>, a MERN Stack Developer at <strong>TechBrain Networks Pvt Ltd</strong>,
-             passionate about building modern web applications that are fast, scalable, and user-friendly. 
-             I specialize in full-stack development, turning ideas into impactful digital experiences while continuously exploring new technologies and best practices.
+              I'm a MERN Stack Developer at <strong>TechBrain Networks Pvt Ltd</strong>,
+             with experience building enterprise-grade web applications across automotive, aerospace, agriculture, education, and fintech domains.
             </motion.p>
 
             <motion.p variants={fadeUp} className="about__text">
-              Leveraging the power of the MERN stack, I build scalable and responsive web applications that balance functionality,
-               performance, and design. From backend architecture to polished frontend experiences, I focus on delivering solutions that make an impact.
+             My expertise includes React.js, Node.js, Express.js, MongoDB, REST APIs, JWT authentication, performance optimization, and SEO-focused development. I enjoy transforming complex business requirements into fast, scalable, and user-friendly digital products.
+            </motion.p>
+            <motion.p variants={fadeUp} className="about__text">
+             I am passionate about transforming complex business requirements into intuitive digital experiences while maintaining strong standards in performance, security, accessibility, and SEO.
             </motion.p>
 
             {/* Info Grid */}

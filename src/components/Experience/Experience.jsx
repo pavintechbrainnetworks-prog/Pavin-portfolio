@@ -24,13 +24,14 @@ const experiences = [
     description:
       'Building enterprise-grade web applications and AI-powered platforms for automotive, edtech, and fintech verticals. Architecting scalable MERN solutions serving thousands of users.',
     highlights: [
-      'Developed 20+ product detail pages with programmatic content generation and SEO optimization',
-      'Built AI-integrated automotive technology platform with real-time dashboards',
-      'Implemented glassmorphism design system and Framer Motion animation library across all apps',
-      'Optimized React rendering performance by 40% using memoization and code splitting',
-      'Engineered RESTful APIs with JWT authentication, role-based access control',
+      'Developed and maintained multiple enterprise web platforms across automotive, aerospace, agriculture, education, and chemical technology domains.',
+      'Engineered scalable React applications with optimized rendering, lazy loading, and code splitting strategies.',
+      'Designed and integrated secure REST APIs using Node.js, Express.js, MongoDB, and JWT authentication.',
+      'Implemented SEO best practices, structured data, and performance optimization techniques.',
+      'Built AI-powered features and interactive dashboards to improve operational visibility and user engagement.',
+      'Contributed to responsive design systems ensuring accessibility and cross-device compatibility.',
     ],
-    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Gemini AI'],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Gemini AI', 'git', 'github','vercel', 'Render'],
   },
   {
     role: 'Frontend Developer (Intern)',
@@ -98,7 +99,7 @@ export default function Experience() {
                 transition={{ duration: 0.3 }}
               >
                 {exp.current && (
-                  <span className="experience__current-badge">Current</span>
+                  <span className="experience__current-badge">June 2025 – Present</span>
                 )}
 
                 <div className="experience__card-header">
