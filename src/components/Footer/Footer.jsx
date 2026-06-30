@@ -40,14 +40,6 @@ export default function Footer() {
             <p className="footer__tagline">
               Building scalable web applications and AI-powered platforms that solve real-world problems.
             </p>
-            <div className="footer__socials">
-              {socials.map((s) => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                  className="footer__social" aria-label={s.label} id={s.id}>
-                  <s.icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Nav */}
