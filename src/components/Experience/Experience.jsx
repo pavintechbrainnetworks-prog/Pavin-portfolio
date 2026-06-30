@@ -22,7 +22,7 @@ const experiences = [
     location: 'Thanjavur, India',
     current: true,
     description:
-      'Building enterprise-grade web applications and AI-powered platforms for automotive, edtech, and fintech verticals. Architecting scalable MERN solutions serving thousands of users.',
+      'I develop and maintain  web applications, I specialize in building scalable, high-performance applications using React.js, Node.js, Express.js, MongoDB,and RESTful APIs. My work focuses on creating secure, responsive, and maintainable solutions by implementing modern development practices, performance optimization, technical SEO, and clean architecture.',
     highlights: [
       'Developed and maintained multiple enterprise web platforms across automotive, aerospace, agriculture, education, and chemical technology domains.',
       'Engineered scalable React applications with optimized rendering, lazy loading, and code splitting strategies.',
